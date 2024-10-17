@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form_wrapper">
+      <div class="form_container">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <label for="Login" class="logIn">Login Page</label>
+          <div class="form_group">
+            <label for="ID" class="ID">ID</label>
+            <input formControlName="id" class="InputID" type="text" />
+            <!-- <div *ngIf="id && id.invalid && id.touched">
+              <small *ngIf="id?.errors?.required">ID is required.</small>
+              <small *ngIf="id?.errors?.minlength"
+                >ID must be at least 5 characters long.</small
+              >
+            </div> -->
+          </div>
+          <div class="form_group">
+            <label for="Password" class="password">Password</label>
+            <input
+              formControlName="password"
+              class="InputPassword"
+              type="Password"
+            />
+          </div>
+          <!-- <div *ngIf="password?.invalid && password?.touched">
+            <small *ngIf="password?.errors?.['required']"
+              >Password is required.</small
+            >
+            <small *ngIf="password?.errors?.['minlength']"
+              >Password must be at least 8 characters long.</small
+            >
+          </div> -->
+          <button class="submitButton" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

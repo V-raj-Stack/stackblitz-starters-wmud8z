@@ -1,0 +1,68 @@
+.form_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form_container {
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .InputID {
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .InputPassword {
+    margin-left: 7px;
+  }
+  
+  .ID {
+    margin-left: 20px;
+  }
+  
+  .password {
+    margin-left: 20px;
+  }
+  
+  .logIn {
+    margin-left: 100px;
+    margin-bottom: 35px;
+    font-size: x-large;
+  }
+  
+  .submitButton{
+    margin-left: 58%;
+    width: 90px;
+    background-color: #000000; /* Green background */
+    color: white; /* White text */
+    padding: 8px 10px; /* Padding inside the button */
+    margin-top: 10px; /* Margin on top */
+    border:2px solid#b40707; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Mouse pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #a1b6a2; /* Darker green when hovered */
+  }
+  
+  /* Button focus and active effect */
+  button:focus {
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 5px #a3b9a4; /* Green shadow on focus */
+  }
+  
+  button:active {
+    background-color: #b1b8b1; /* Darker color when button is clicked */
+    box-shadow: 0 5px #666; /* Inner shadow to simulate button press */
+    transform: translateY(4px); /* Simulate pressing the button */
+  }  
